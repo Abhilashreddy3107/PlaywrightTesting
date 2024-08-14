@@ -26,7 +26,7 @@ test.describe('YouTube Search Feature', () => {
 
   test('Search by clicking on a suggestions', async ({ page }) => {
     await page.click('input#search');
-    // Type 'Playwri' with a delay of 600ms between keystrokes
+    // Type 'Playwri' with a delay of 60ms between keystrokes
     await page.type('input#search', 'Playwri', { delay: 60 });
     await page.waitForSelector('ul[role="listbox"]');
     await page.waitForTimeout(2000);
